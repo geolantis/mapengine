@@ -171,3 +171,46 @@ body,
   width: 100%;
   overflow: auto;
 }
+
+ .maplibregl-ctrl button {
+        width: 4rem;
+        height: 4rem;
+        font-size: 2rem;
+      }
+      .maplibregl-ctrl-attrib-button {
+      }
+
+      .maplibregl-ctrl button .maplibregl-ctrl-icon:before {
+        font-size: 1.5rem;
+      }
+
+      .maplibregl-ctrl-group button {
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: transparent;
+      }
+
+      .maplibregl-ctrl-group {
+        --ml-c-bg-1: 255 255 255 / 40%; /* 50% transparency */
+      }
+
+      .maplibregl-ctrl button {
+        background-color: rgb(var(--ml-c-bg-1)); /* Use the updated variable */
+      }
+
+      /* Increase transparency on hover */
+      .maplibregl-ctrl button:hover {
+        background-color: rgb(
+          var(--ml-c-bg-1) / 70%
+        ); /* Less transparency on hover */
+      }
+
+      .maplibregl-ctrl-top-right {
+        right: 10px; /* Move 40px from the right */
+      }
+
+      .maplibregl-ctrl-bottom-right {
+        right: 10px; /* Move 40px from the right */
+      }
